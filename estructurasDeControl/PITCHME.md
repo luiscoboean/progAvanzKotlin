@@ -6,7 +6,7 @@
 
 ## Operadores Condicionales
 
-En *Kotlin* tenemos los operadores lógicos normales que esperamos en todo lenguaje de programación.
+En *Kotlin* tenemos:
 
 | Operador | Significado     | Expresión |
 |----------|-----------------|-----------|
@@ -16,3 +16,15 @@ En *Kotlin* tenemos los operadores lógicos normales que esperamos en todo lengu
 | `<=`       | Menor o igual a | `a <= b`    |
 | `==`       | Es igual a      | `a == b`    |
 | `!=`       | No es igual a   | `a != b`    |
+
+---
+
+## Operadores Lógicos
+
+Tenemos 3 operadores en *Kotlin*:
+
+| Operador | Descripción                              | Expresión        |
+|----------|------------------------------------------|------------------|
+| `&&`     | `true`si ambas expresiones son `true`    | `(a>b) && (a<c)` |
+| `||`     | `false` si ambas expresiones son `false` | `(a>b) || (a<c)` |
+| `!`      | `true` si la expresión es false          | `!(a <= b)`      |

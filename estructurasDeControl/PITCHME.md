@@ -81,3 +81,33 @@ var numCifras = if (n in 0 .. 9) {
         3
      }
 ```
+---
+
+## La instrucción `when`
+
+Permite seleccionar un acción dependiendo de múltiples valores de una variable o valor.
+
+```kotlin
+when (dia) {
+    0 -> return "domingo"
+    1 -> return "lunes"
+    2 -> return "martes"
+    3 -> return "miércoles"
+    4 -> return "jueves"
+    5 -> return "viernes"
+    6 -> return "sábado"
+    else -> return "ERROR
+}
+```
+---
+
+# El operador `when`
+
+`when` también puede usarse en lugar de una expresión aritmética o asignación 
+```kotlin
+val tipo = when (dia) {
+    0, 6 -> "fin de semana"
+    in 1..5 -> "día laboral"
+    else -> "raro!"
+}
+```

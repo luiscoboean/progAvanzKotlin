@@ -40,3 +40,25 @@ Este operador permite saber si un elemento pertenece o no a una colección o ran
 |----------|------------------------------------------|------------------|
 | `in`     | `a in b` | `numero in 10..99` |
 | `!in`    | `a !in b` | `letra !in 'A' .. 'Z'` |
+
+## Instrucción `if`
+
+```kotlin
+val mayor = a
+
+if (b >= mayor) {
+    mayor = b
+}
+```
+
+---
+
+## Instrucción `if` / `else`
+
+```kotlin
+if (a > b) {
+    mayor = a
+}
+else {
+    mayor = b
+}

@@ -111,3 +111,87 @@ val tipo = when (dia) {
     else -> "raro!"
 }
 ```
+
+---
+
+## Instrucciones repetitivas - el `for`
+
+Esta instrucción permite realizar un conjunto de instrucciones un número determinado de veces. *Kotlin* ofrece múltiples
+opciones para trabajar con esta instrucción...
+
+```kotlin
+for (i in 1..10) { }
+
+for (i in 1 until 10) { }
+
+for (i in 10 downTo 0) { }
+
+for (i in 1..10 step 2) { }
+
+for (i in 10 downTo 1 step 2) { }
+
+for (item in collection) { }
+```
+
+---
+
+## La instrucción `while`
+
+El `while` en *Kotlin*  funciona igual que en otros lenguajes de programación. Repetir hasta que la condición sea falsa.
+
+![Instrucción While](https://cdn.programiz.com/sites/tutorial2program/files/kotlin-while-loop-flowchart.jpg)
+
+El siguiente ejemplo halla la raíz cuadrada entera de un número entero
+
+```kotlin
+fun raizCuadrada(n: Int): Int {
+    val i = 1
+    while (i * i <= n) {
+        i++
+    }
+    return if (i * i == n) i else i - 1
+}
+```
+
+---
+
+## La instrucción `do/while`
+
+Muy parecida a la instrucción `while`, solo que la condición de salida se evalúa después del cuerpo de la instrucción.
+
+![DO..While](https://cdn.programiz.com/sites/tutorial2program/files/kotlin-do-while-loop.jpg)
+
+El siguiente ejemplo lee una serie de números desde teclado y genera la suma hasta que se ingresa un cero.
+
+```kotlin
+fun main(args: Array<String>) {
+
+    var suma: Int = 0
+    var número: String
+
+    do {
+        print("Entre un número entero: ")
+        número = readLine()!!
+        suma += número.toInt()
+
+    } while (número != "0")
+
+    println("La Suma Es = $suma")
+}
+```
+
+---
+
+## Operaciones comunes con los números
+
+Sin importar el tipo de datos, todos los tipos numéricos de *Kotlin*  soportan las siguientes operaciones
+
+- `toByte(): Byte`
+- `toChar(): Char`
+- `toDouble(): Double`
+- `toString(): String`
+- `fun dec(): Int`: Para decrementar el valor de la variable
+- `fun inc(): Int`: Para incrementar el valor de la variable
+- `MAX_VALUE`: el número más grande, dependiendo del tipo
+- `MIN_VALUE`: el número más pequeño, dependiendo del tipo
+

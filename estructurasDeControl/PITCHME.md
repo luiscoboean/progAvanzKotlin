@@ -26,5 +26,5 @@ Tenemos 3 operadores en *Kotlin*:
 | Operador | Descripción                              | Expresión        |
 |----------|------------------------------------------|------------------|
 | `&&`     | `true`si ambas expresiones son `true`    | `(a>b) && (a<c)` |
-| `||`     | `false` si ambas expresiones son `false` | `(a>b) || (a<c)` |
+| `\|\|`   | `false` si ambas expresiones son `false` | `(a>b) \|\| (a<c)` |
 | `!`      | `true` si la expresión es false          | `!(a <= b)`      |

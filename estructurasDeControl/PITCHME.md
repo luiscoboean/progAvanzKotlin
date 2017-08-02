@@ -28,3 +28,15 @@ Tenemos 3 operadores en *Kotlin*:
 | `&&`     | `true`si ambas expresiones son `true`    | `(a>b) && (a<c)` |
 | `\|\|`   | `false` si ambas expresiones son `false` | `(a>b) \|\| (a<c)` |
 | `!`      | `true` si la expresión es false          | `!(a <= b)`      |
+
+---
+
+## El operador `in`
+
+Este operador permite saber si un elemento pertenece o no a una colección o rango
+
+
+| Operador | Expresión                              | Ejemplo |
+|----------|------------------------------------------|------------------|
+| `in`     | `a in b` | `numero in 10..99` |
+| `!in`    | `a !in b` | `letra !in 'A' .. 'Z'` |

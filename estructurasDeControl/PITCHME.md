@@ -41,6 +41,8 @@ Este operador permite saber si un elemento pertenece o no a una colección o ran
 | `in`     | `a in b` | `numero in 10..99` |
 | `!in`    | `a !in b` | `letra !in 'A' .. 'Z'` |
 
+---
+
 ## Instrucción `if`
 
 ```kotlin
@@ -62,3 +64,20 @@ if (a > b) {
 else {
     mayor = b
 }
+```
+
+---
+
+## Expresión `if` 
+
+```kotlin
+var numCifras = if (n in 0 .. 9) {
+        1
+    }
+    else if (n in 10 .. 99) {
+        2
+    }
+    else {
+        3
+     }
+```
